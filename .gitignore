@@ -1,0 +1,192 @@
+# ==========================================
+# ALVEOSAGE - GITIGNORE
+# ==========================================
+
+# ==========================================
+# 1. PYTHON
+# ==========================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg
+*.egg-info/
+.installed.cfg
+build/
+dist/
+develop-eggs/
+.eggs/
+wheels/
+pip-wheel-metadata/
+
+# ==========================================
+# 2. ENVIRONMENTS & SECRETS
+# ==========================================
+.env
+.env.*
+!.env.example
+
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+conda-env/
+
+secrets/
+credentials/
+*.pem
+*.key
+
+# ==========================================
+# 3. DATASETS
+# ==========================================
+dataset/
+datasets/
+processed_dataset/
+
+# Dataset archives
+*.zip
+*.tar
+*.tar.gz
+*.rar
+*.7z
+
+# macOS archive metadata
+__MACOSX/
+
+# ==========================================
+# 4. TRAINED MODELS & WEIGHTS
+# ==========================================
+*.pth
+*.pt
+*.ckpt
+*.onnx
+*.engine
+*.h5
+*.weights
+*.safetensors
+*.tflite
+
+# Model checkpoints
+checkpoints/
+models/weights/
+outputs/checkpoints/
+
+# ==========================================
+# 5. GENERATED OUTPUTS
+# ==========================================
+
+# Uploaded patient images
+outputs/uploads/*
+!outputs/uploads/.gitkeep
+
+# Generated Grad-CAM heatmaps
+outputs/heatmaps/*
+!outputs/heatmaps/.gitkeep
+
+# Generated PDF reports
+outputs/reports/*
+!outputs/reports/.gitkeep
+
+# Training outputs
+outputs/training/*
+!outputs/training/.gitkeep
+
+# Evaluation outputs
+outputs/evaluation/*
+!outputs/evaluation/.gitkeep
+
+# Generated visualizations and artifacts
+outputs/*.png
+outputs/*.jpg
+outputs/*.jpeg
+outputs/*.pdf
+outputs/*.json
+outputs/*.csv
+outputs/*.npy
+outputs/*.npz
+outputs/*.ply
+outputs/*.glb
+
+# ==========================================
+# 6. LOGS & EXPERIMENT TRACKING
+# ==========================================
+logs/
+*.log
+runs/
+tensorboard/
+outputs/training/tensorboard/
+
+# ==========================================
+# 7. TESTING & CACHE
+# ==========================================
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+.ipynb_checkpoints/
+
+# ==========================================
+# 8. IDE & EDITOR
+# ==========================================
+.vscode/
+.idea/
+*.swp
+*.swo
+*.swn
+*~
+
+# ==========================================
+# 9. OPERATING SYSTEM
+# ==========================================
+.DS_Store
+.AppleDouble
+.LSOverride
+Thumbs.db
+desktop.ini
+$RECYCLE.BIN/
+
+# ==========================================
+# 10. TEMPORARY FILES
+# ==========================================
+temp/
+tmp/
+*.tmp
+*.bak
+*.old
+*.orig
+*.rej
+
+# ==========================================
+# 11. MATPLOTLIB & OTHER CACHES
+# ==========================================
+.matplotlib_cache/
+.cache/
+.cache-loader/
+
+# ==========================================
+# 12. DATABASE & LOCAL STORAGE
+# ==========================================
+*.db
+*.sqlite
+*.sqlite3
+
+# ==========================================
+# 13. GENERATED FRONTEND ASSETS
+# ==========================================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# ==========================================
+# 14. LOCAL DEVELOPMENT SCRIPTS
+# ==========================================
+api_key_checker.py
